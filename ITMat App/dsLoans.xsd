@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="dsLoans" targetNamespace="http://tempuri.org/dsLoans.xsd" xmlns:mstns="http://tempuri.org/dsLoans.xsd" xmlns="http://tempuri.org/dsLoans.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="ConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="ConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.ITMat_App.Properties.Settings.GlobalReference.Default.ConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="LoansCustomersTableAdapter" GeneratorDataComponentClassName="LoansCustomersTableAdapter" Name="LoansCustomers" UserDataComponentName="LoansCustomersTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="ConnectionString (Settings)" DbObjectName="ITMat.dbo.LoansCustomers" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT ID, CustomerRefID, DateFrom, DateTo, DatePickedUp, DateReturned, TypeRefID, Comment, MANR, Stabsnummer, Firstname, Middlename, Lastname, Phone, MYN, ENH, AFD, LoanType, CreatedBy, FailedPickup, CreatedDate FROM dbo.LoansCustomers</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ID" DataSetColumn="ID" />
+              <Mapping SourceColumn="CustomerRefID" DataSetColumn="CustomerRefID" />
+              <Mapping SourceColumn="DateFrom" DataSetColumn="DateFrom" />
+              <Mapping SourceColumn="DateTo" DataSetColumn="DateTo" />
+              <Mapping SourceColumn="DatePickedUp" DataSetColumn="DatePickedUp" />
+              <Mapping SourceColumn="DateReturned" DataSetColumn="DateReturned" />
+              <Mapping SourceColumn="TypeRefID" DataSetColumn="TypeRefID" />
+              <Mapping SourceColumn="Comment" DataSetColumn="Comment" />
+              <Mapping SourceColumn="MANR" DataSetColumn="MANR" />
+              <Mapping SourceColumn="Stabsnummer" DataSetColumn="Stabsnummer" />
+              <Mapping SourceColumn="Firstname" DataSetColumn="Firstname" />
+              <Mapping SourceColumn="Middlename" DataSetColumn="Middlename" />
+              <Mapping SourceColumn="Lastname" DataSetColumn="Lastname" />
+              <Mapping SourceColumn="Phone" DataSetColumn="Phone" />
+              <Mapping SourceColumn="MYN" DataSetColumn="MYN" />
+              <Mapping SourceColumn="ENH" DataSetColumn="ENH" />
+              <Mapping SourceColumn="AFD" DataSetColumn="AFD" />
+              <Mapping SourceColumn="LoanType" DataSetColumn="LoanType" />
+              <Mapping SourceColumn="CreatedBy" DataSetColumn="CreatedBy" />
+              <Mapping SourceColumn="FailedPickup" DataSetColumn="FailedPickup" />
+              <Mapping SourceColumn="CreatedDate" DataSetColumn="CreatedDate" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="dsLoans" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="dsLoans" msprop:Generator_UserDSName="dsLoans">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="LoansCustomers" msprop:Generator_TableClassName="LoansCustomersDataTable" msprop:Generator_TableVarName="tableLoansCustomers" msprop:Generator_TablePropName="LoansCustomers" msprop:Generator_RowDeletingName="LoansCustomersRowDeleting" msprop:Generator_RowChangingName="LoansCustomersRowChanging" msprop:Generator_RowEvHandlerName="LoansCustomersRowChangeEventHandler" msprop:Generator_RowDeletedName="LoansCustomersRowDeleted" msprop:Generator_UserTableName="LoansCustomers" msprop:Generator_RowChangedName="LoansCustomersRowChanged" msprop:Generator_RowEvArgName="LoansCustomersRowChangeEvent" msprop:Generator_RowClassName="LoansCustomersRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ID" msprop:Generator_ColumnVarNameInTable="columnID" msprop:Generator_ColumnPropNameInRow="ID" msprop:Generator_ColumnPropNameInTable="IDColumn" msprop:Generator_UserColumnName="ID" type="xs:int" />
+              <xs:element name="CustomerRefID" msprop:Generator_ColumnVarNameInTable="columnCustomerRefID" msprop:Generator_ColumnPropNameInRow="CustomerRefID" msprop:Generator_ColumnPropNameInTable="CustomerRefIDColumn" msprop:Generator_UserColumnName="CustomerRefID" type="xs:int" />
+              <xs:element name="DateFrom" msprop:Generator_ColumnVarNameInTable="columnDateFrom" msprop:Generator_ColumnPropNameInRow="DateFrom" msprop:Generator_ColumnPropNameInTable="DateFromColumn" msprop:Generator_UserColumnName="DateFrom" type="xs:dateTime" />
+              <xs:element name="DateTo" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnDateTo" msprop:Generator_ColumnPropNameInRow="DateTo" msprop:Generator_ColumnPropNameInTable="DateToColumn" msprop:Generator_UserColumnName="DateTo" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DatePickedUp" msprop:Generator_ColumnVarNameInTable="columnDatePickedUp" msprop:Generator_ColumnPropNameInRow="DatePickedUp" msprop:Generator_ColumnPropNameInTable="DatePickedUpColumn" msprop:Generator_UserColumnName="DatePickedUp" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="DateReturned" msprop:Generator_ColumnVarNameInTable="columnDateReturned" msprop:Generator_ColumnPropNameInRow="DateReturned" msprop:Generator_ColumnPropNameInTable="DateReturnedColumn" msprop:Generator_UserColumnName="DateReturned" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="TypeRefID" msprop:Generator_ColumnVarNameInTable="columnTypeRefID" msprop:Generator_ColumnPropNameInRow="TypeRefID" msprop:Generator_ColumnPropNameInTable="TypeRefIDColumn" msprop:Generator_UserColumnName="TypeRefID" type="xs:int" />
+              <xs:element name="Comment" msprop:Generator_ColumnVarNameInTable="columnComment" msprop:Generator_ColumnPropNameInRow="Comment" msprop:Generator_ColumnPropNameInTable="CommentColumn" msprop:Generator_UserColumnName="Comment" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MANR" msprop:Generator_ColumnVarNameInTable="columnMANR" msprop:Generator_ColumnPropNameInRow="MANR" msprop:Generator_ColumnPropNameInTable="MANRColumn" msprop:Generator_UserColumnName="MANR">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Stabsnummer" msprop:Generator_ColumnVarNameInTable="columnStabsnummer" msprop:Generator_ColumnPropNameInRow="Stabsnummer" msprop:Generator_ColumnPropNameInTable="StabsnummerColumn" msprop:Generator_UserColumnName="Stabsnummer">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="15" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Firstname" msprop:Generator_ColumnVarNameInTable="columnFirstname" msprop:Generator_ColumnPropNameInRow="Firstname" msprop:Generator_ColumnPropNameInTable="FirstnameColumn" msprop:Generator_UserColumnName="Firstname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Middlename" msprop:Generator_ColumnVarNameInTable="columnMiddlename" msprop:Generator_ColumnPropNameInRow="Middlename" msprop:Generator_ColumnPropNameInTable="MiddlenameColumn" msprop:Generator_UserColumnName="Middlename" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Lastname" msprop:Generator_ColumnVarNameInTable="columnLastname" msprop:Generator_ColumnPropNameInRow="Lastname" msprop:Generator_ColumnPropNameInTable="LastnameColumn" msprop:Generator_UserColumnName="Lastname">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Phone" msprop:Generator_ColumnVarNameInTable="columnPhone" msprop:Generator_ColumnPropNameInRow="Phone" msprop:Generator_ColumnPropNameInTable="PhoneColumn" msprop:Generator_UserColumnName="Phone" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MYN" msprop:Generator_ColumnVarNameInTable="columnMYN" msprop:Generator_ColumnPropNameInRow="MYN" msprop:Generator_ColumnPropNameInTable="MYNColumn" msprop:Generator_UserColumnName="MYN">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ENH" msprop:Generator_ColumnVarNameInTable="columnENH" msprop:Generator_ColumnPropNameInRow="ENH" msprop:Generator_ColumnPropNameInTable="ENHColumn" msprop:Generator_UserColumnName="ENH" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="AFD" msprop:Generator_ColumnVarNameInTable="columnAFD" msprop:Generator_ColumnPropNameInRow="AFD" msprop:Generator_ColumnPropNameInTable="AFDColumn" msprop:Generator_UserColumnName="AFD" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="10" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="LoanType" msprop:Generator_ColumnVarNameInTable="columnLoanType" msprop:Generator_ColumnPropNameInRow="LoanType" msprop:Generator_ColumnPropNameInTable="LoanTypeColumn" msprop:Generator_UserColumnName="LoanType">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="CreatedBy" msdata:DataType="System.Guid, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" msprop:Generator_ColumnVarNameInTable="columnCreatedBy" msprop:Generator_ColumnPropNameInRow="CreatedBy" msprop:Generator_ColumnPropNameInTable="CreatedByColumn" msprop:Generator_UserColumnName="CreatedBy" type="xs:string" />
+              <xs:element name="FailedPickup" msprop:Generator_ColumnVarNameInTable="columnFailedPickup" msprop:Generator_ColumnPropNameInRow="FailedPickup" msprop:Generator_ColumnPropNameInTable="FailedPickupColumn" msprop:Generator_UserColumnName="FailedPickup" type="xs:boolean" />
+              <xs:element name="CreatedDate" msprop:Generator_ColumnVarNameInTable="columnCreatedDate" msprop:Generator_ColumnPropNameInRow="CreatedDate" msprop:Generator_ColumnPropNameInTable="CreatedDateColumn" msprop:Generator_UserColumnName="CreatedDate" type="xs:dateTime" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:LoansCustomers" />
+      <xs:field xpath="mstns:ID" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

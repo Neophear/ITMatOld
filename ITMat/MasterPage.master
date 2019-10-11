@@ -1,0 +1,57 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%@ Register TagPrefix="asp" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit"%>
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head id="Head1" runat="server">
+    <title><%: Page.Title %> - ITMat</title>
+    <link href="~/Content/StyleSheet.css" rel="stylesheet" type="text/css" />
+    <link id="Link1" runat="server" rel="shortcut icon" href="~/Images/favicon.ico" type="image/x-icon"/>
+    <link id="Link2" runat="server" rel="icon" href="~/Images/favicon.ico" type="image/ico"/>
+    <asp:ContentPlaceHolder ID="HeadContent" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="Form1" runat="server">
+    <div class="page">
+        <div class="header">
+            <div class="title">
+                <h1>
+                    <%: Page.Title %>
+                </h1>
+            </div>
+            <div class="clear hideSkiplink">
+                <asp:Table ID="Table1" Width="100%" BorderStyle="None" CellPadding="0" CellSpacing="0" runat="server">
+                    <asp:TableRow>
+                        <asp:TableCell>
+                            <asp:Menu ID="Menu1" runat="server" DataSourceID="smdsSiteMap" Orientation="Horizontal" IncludeStyleBlock="false" CssClass="menu">
+                            </asp:Menu>
+                            <asp:SiteMapDataSource ID="smdsSiteMap" runat="server" ShowStartingNode="False" />
+                        </asp:TableCell>
+                        <asp:TableCell HorizontalAlign="Right" ForeColor="#dde4ec">
+                            <asp:LoginView ID="LoginView1" runat="server">
+                                <LoggedInTemplate>
+                                    <%: String.Format("Logget ind som {0} {1}.", Profile.Firstname, Profile.Lastname[0]) %>
+                                </LoggedInTemplate>
+                            </asp:LoginView><br />
+                            <asp:LoginStatus ID="LoginStatus1" runat="server" ForeColor="#dde4ec" LogoutAction="RedirectToLoginPage" LogoutText="Log ud" LoginText="Log ind" />
+                        </asp:TableCell>
+                    </asp:TableRow>
+                </asp:Table>
+            </div>
+        </div>
+        <div class="main">
+            <asp:ToolkitScriptManager ID="ToolkitScriptManager1" EnablePageMethods="true" EnableScriptGlobalization="true" runat="server"></asp:ToolkitScriptManager>
+            <section class="content-wrapper main-content clear-fix">
+                <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+            </section>
+        </div>
+        <div class="clear">
+        </div>
+    </div>
+    <div class="footer">
+        <asp:Label ID="lblFooter" runat="server" Text="Lavet af Stiig Gade"></asp:Label>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,54 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Site.master.cs" Inherits="SiteMaster" %>
+<%@ Register TagPrefix="asp" Namespace="AjaxControlToolkit" Assembly="AjaxControlToolkit"%>
+
+<!DOCTYPE html>
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+    <asp:PlaceHolder runat="server">
+    </asp:PlaceHolder>
+    <webopt:BundleReference runat="server" Path="~/Content/css" /> 
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width" />
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+    <form runat="server">
+    <asp:ToolkitScriptManager ID="ToolkitScriptManager1" EnableScriptGlobalization="true" runat="server"></asp:ToolkitScriptManager>
+    <header>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p class="site-title">
+                    <a runat="server" href="~/">your logo here</a></p>
+            </div>
+            <div class="float-right">
+                <nav>
+                    <asp:Menu ID="Menu1" runat="server" DataSourceID="smdsSiteMap" Orientation="Horizontal" CssClass="menu">
+                        <StaticItemTemplate>
+                            <%# "&nbsp;" + Eval("Text") + "&nbsp;"%>
+                        </StaticItemTemplate>
+                    </asp:Menu>
+                    <asp:SiteMapDataSource ID="smdsSiteMap" runat="server" ShowStartingNode="False" />
+                </nav>
+            </div>
+        </div>
+    </header>
+    <div id="body">
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+    </div>
+    <footer>
+        <div class="content-wrapper">
+            <div class="float-left">
+                <p>
+                    &copy; <%: DateTime.Now.Year %> - My ASP.NET Application
+                </p>
+            </div>
+        </div>
+    </footer>
+    </form>
+</body>
+</html>

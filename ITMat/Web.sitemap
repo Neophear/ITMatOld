@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode url="Default.aspx?Nothing" title="Home" description="Dette er roden">
+        <siteMapNode url="~/access/Default.aspx" roles="User" title="Forside" description="Gå til forsiden" />
+        <siteMapNode title="MAT" roles="User">
+          <siteMapNode title="Modems" url="~/access/Item/ShowItems.aspx?type=1#">
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=1" title="Alle" description="Se alle modems" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=1&amp;filter=in" title="På lager" description="Modems på lager" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=1&amp;filter=out" title="Ude" description="Modems ude" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=1&amp;filter=discarded" title="Kasseret" description="Modems der er kasseret" />
+          </siteMapNode>
+          <siteMapNode title="Tokens" url="~/access/Item/ShowItems.aspx?type=2#">
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=2" title="Alle" description="Se alle tokens" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=2&amp;filter=in" title="På lager" description="Tokens på lager" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=2&amp;filter=out" title="Ude" description="Tokens ude" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=2&amp;filter=discarded" title="Kasseret" description="Tokens der er kasseret" />
+          </siteMapNode>
+          <siteMapNode title="Bærbare" url="~/access/Item/ShowItems.aspx?type=3#">
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=3" title="Alle" description="Se alle bærbarer" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=3&amp;filter=in" title="På lager" description="Bærbarer på lager" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=3&amp;filter=out" title="Ude" description="Bærbarer ude" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=3&amp;filter=discarded" title="Kasseret" description="Bærbarer der er kasseret" />
+          </siteMapNode>
+          <siteMapNode title="Printere" url="~/access/Item/ShowItems.aspx?type=4#">
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=4" title="Alle" description="Se alle printere" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=4&amp;filter=in" title="På lager" description="Printere på lager" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=4&amp;filter=out" title="Ude" description="Printere ude" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=4&amp;filter=discarded" title="Kasseret" description="Printere der er kasseret" />
+          </siteMapNode>
+          <siteMapNode title="Projektorer" url="~/access/Item/ShowItems.aspx?type=5#">
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=5" title="Alle" description="Se alle projektorer" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=5&amp;filter=in" title="På lager" description="Projektorer på lager" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=5&amp;filter=out" title="Ude" description="Projektorer ude" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=5&amp;filter=discarded" title="Kasseret" description="Projektorer der er kasseret" />
+          </siteMapNode>
+          <siteMapNode title="USB-keys" url="~/access/Item/ShowItems.aspx?type=6#">
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=6" title="Alle" description="Se alle USB-keys" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=6&amp;filter=in" title="På lager" description="USB-keys på lager" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=6&amp;filter=out" title="Ude" description="USB-keys ude" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=6&amp;filter=discarded" title="Kasseret" description="USB-keys der er kasseret" />
+          </siteMapNode>
+            <siteMapNode title="Mobiltelefoner" url="~/access/Item/ShowItems.aspx?type=7#">
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=7" title="Alle" description="Se alle mobiltelefoner" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=7&amp;filter=in" title="På lager" description="Mobiltelefoner på lager" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=7&amp;filter=out" title="Ude" description="Mobiltelefoner ude" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=7&amp;filter=discarded" title="Kasseret" description="Mobiltelefoner der er kasseret" />
+          </siteMapNode>
+          <siteMapNode title="SIM-kort" url="~/access/Item/ShowItems.aspx?type=8#">
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=8" title="Alle" description="Se alle SIM-kort" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=8&amp;filter=in" title="På lager" description="SIM-kort på lager" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=8&amp;filter=out" title="Ude" description="SIM-kort ude" />
+            <siteMapNode url="~/access/Item/ShowItems.aspx?type=8&amp;filter=discarded" title="Kasseret" description="SIM-kort der er kasseret" />
+          </siteMapNode>
+          <siteMapNode url="~/access/Item/AddItem.aspx" title="Tilføj MAT" description="Tilføj nyt MAT til databasen" />
+        </siteMapNode>
+        <siteMapNode title="Kunder" roles="User">
+          <siteMapNode url="~/access/Customer/ShowCustomers.aspx" title="Se kunder" description="Se alle kunder" />
+          <siteMapNode url="~/access/Customer/CreateCustomer.aspx" title="Opret kunde" description="Opret en ny kunde" />
+        </siteMapNode>
+        <siteMapNode title="Udlån" roles="User" url="~/access/Loan/ShowAllLoans.aspx#">
+            <siteMapNode url="~/access/Loan/ShowAllLoans.aspx" title="Se alle udlån" description="Se alle eksisterende udlån" />
+            <siteMapNode url="~/access/Loan/CreateLoan.aspx" title="Opret udlån" description="Opret udlån af MAT" />
+        </siteMapNode>
+        <siteMapNode title="Brugere" roles="User" url="~/access/User/ShowUsers.aspx#">
+          <siteMapNode url="~/access/User/ShowUsers.aspx" title="Se brugere" description="Se alle brugere" />
+        </siteMapNode>
+        <siteMapNode url="~/access/Search.aspx" title="Søg" roles="User" description="Søg efter brugere eller genstande" />
+        <siteMapNode url="~/access/Settings.aspx" title="Indstillinger" roles="User" description="Diverse indstillinger" />
+        <siteMapNode title="Admin" roles="Admin">
+          <siteMapNode url="~/admin/manageusers.aspx" title="Brugerstyring" description="Godkend brugere" />
+          <siteMapNode url="~/admin/ManageMiscItems.aspx" title="Rediger genstande" description="Rediger/tilføj genstande" />
+          <siteMapNode url="~/admin/ManageInfo.aspx" title="Rediger Info" description="Rediger Info om IT" />
+          <siteMapNode url="~/admin/ShowLog.aspx" title="Vis Log" description="Vis loggen" />
+          <siteMapNode url="~/admin/ManageSQL.aspx" title="Kør SQL" description="Kør SQL" />
+        </siteMapNode>
+        <siteMapNode url="~/public/CreateUser.aspx" title="Ny bruger" description="Opret dig som ny bruger" />
+        <siteMapNode url="~/public/Login.aspx" title="Log ind" description="Log dig ind" />
+    </siteMapNode>
+</siteMap>
